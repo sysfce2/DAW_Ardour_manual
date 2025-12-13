@@ -400,6 +400,14 @@ part: chapter
 ---
 
 ---
+title: Record/Punch Options
+include: record-punch-options.html
+link: record-punch-options
+uri: ardours-interface/record-punch-options.html
+part: chapter
+---
+
+---
 title: Transport Clocks
 include: transport-clocks.html
 link: transport-clocks
@@ -408,7 +416,7 @@ part: chapter
 ---
 
 ---
-title: Selection and Punch Clocks
+title: Selection Clocks
 include: selection-and-punch-clocks.html
 link: selection-and-punch-clocks
 uri: ardours-interface/selection-and-punch-clocks
@@ -545,18 +553,18 @@ part: subchapter
 ---
 
 ---
-title: CD Markers
-include: cd-markers.html
-link: cd-markers
-uri: working-with-markers/cd-markers
-part: subchapter
----
-
----
 title: Location Markers
 include: creating-location-markers.html
 link: creating-location-markers
 uri: working-with-markers/creating-location-markers
+part: subchapter
+---
+
+---
+title: CD Track Markers
+include: cd-markers.html
+link: cd-markers
+uri: working-with-markers/cd-markers
 part: subchapter
 ---
 
