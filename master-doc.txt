@@ -633,7 +633,7 @@ part: subchapter
 ---
 
 ---
-title: The Arrangement list
+title: The Arrangement List
 include: arrangement-list.html
 link: arrangement-list
 uri: ardours-interface/editor-lists/arrangement-list
