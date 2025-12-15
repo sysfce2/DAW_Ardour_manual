@@ -1196,6 +1196,14 @@ part: subchapter
 ---
 
 ---
+title: Region Editor Pane
+include: region-editor.html
+link: region-editor
+uri: working-with-regions/region-editor
+part: subchapter
+---
+
+---
 title: Region Naming
 include: region-naming.html
 link: region-naming
