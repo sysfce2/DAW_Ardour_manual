@@ -453,6 +453,14 @@ part: chapter
 ---
 
 ---
+title: Playhead Options
+include: playhead-options.html
+link: playhead-options
+uri: ardours-interface/the-playhead-options
+part: subchapter
+---
+
+---
 title: Zoom Controls
 include: zoom-controls.html
 link: zoom-controls

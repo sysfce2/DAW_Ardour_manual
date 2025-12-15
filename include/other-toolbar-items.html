@@ -1,5 +1,5 @@
 
-<h2 id="latency-compensation-info">The Latency Compensation Info</h2>
+<h2 id="latency-compensation-info">Plugin Delay Compensation</h2>
 
 <figure>
 	<img alt="The Latency Compensation Info" src="/images/latency-compensation-info.png">
@@ -30,24 +30,64 @@
 </ul>
 
 
-<h2 id="playhead_options">The Playhead Options</h2>
+<h2 id="cue_options">The Cue Options</h2>
 
 <figure>
-	<img alt="The playhead options" src="/images/playhead-options.png">
+	<img alt="The Cue options" src="/images/cue_options.png">
 	<figcaption>
-		The playhead options
+		The cue options
 	</figcaption>
 </figure>
 
 <p>
-  Those 2 buttons control the behaviour of the playhead:
+  Those two buttons control how Ardour deals with cue markers:
 </p>
 <ul>
-	<li><dfn>Follow Range</dfn> is a toggle that can be used to control whether or not making a range selection will move the playhead to the start of the range.</li>
-	<li><dfn>Auto Return</dfn> is a toggle switch too. When active, pressing the Stop button returns the playhead to its previous position, and when inactive, pressing Stop keeps the playhead at its current location. Activating Auto Return can be useful for hearing the same piece of audio before and after tweaking it, without having to set a loop range on it.</li>
+	<li><dfn>Rec Cues</dfn>: when enabled, every time you click on a cue in the Cue window during playback, Ardour will insert the correspinding cue marker at the current playhead position. Only use it when programming cue sequences to align with timeline content.</li>
+	<li><dfn>Play Cues</dfn>: when enabled, Ardour will play the corresponding cue every time the playhead passes its cue marker. This option is useful be be on by default.</li>
 </ul>
 
-<h2 id="status_indicators">The Status indicators</h2>
+<h2 id="tb_master_level_meter">The Master Level Meter</h2>
+
+<figure>
+  <img alt="The Master Level Meter" src="/images/master-level-meter.png">
+  <figcaption>
+    The Master Level Meter
+  </figcaption>
+</figure>
+<p>
+  The global meter shows the levels of the master's output. Its the same
+  meter that sits in the <a href="@@master-bus-strip">Master's Mixer strip</a>,
+  and also shows a peak indicator, that turns red when  any level exceeds
+  0dB. It can be reset by a <kbd class="mouse">Left</kbd> click.
+</p>
+
+<h2 id="monitor_section_info">The Monitor Section Info</h2>
+
+<figure>
+  <img alt="Monitor Section Info" src="/images/monitor-section-info.png">
+  <figcaption>
+    Monitor Section Info
+  </figcaption>
+</figure>
+
+<p>
+  This section is only useful and active if the session has a
+  <a href="@@monitor-section">Monitor section</a>. The three buttons are
+  exactly linked to their counterparts in the Monitor slice of the mixer,
+  but as they sit in the toolbar, remain visible even in Editor mode.
+</p>
+
+<p>
+  The three buttons are:
+</p>
+<ul>
+  <li><dfn>Mono</dfn>: sums all of the paths to a single mono signal and applies it to all Monitor Section outputs.</li>
+  <li><dfn>Dim All</dfn>: Reduces overall monitor level by the amount set with the Dim level control.</li>
+  <li><dfn>Mute All</dfn>: Mutes all monitoring.</li>
+</ul>
+
+<h2 id="status_indicators">The Status Indicators</h2>
 
 <figure>
 	<img alt="The Status buttons" src="/images/status_buttons.png">
@@ -66,53 +106,12 @@
   <tr><th>Feedback</th><td>Blinks when Ardour detects a <dfn>feedback loop</dfn>, which happens when the output of an audio signal chain is plugged back to its input. This is probably not wanted and can be dangerous for the hardware and the listener.</td></tr>
 </table>
 
-<h2 id="monitor_section_info">The Monitor Section Info</h2>
-
-<figure>
-	<img alt="Monitor Section Info" src="/images/monitor-section-info.png">
-	<figcaption>
-		Monitor Section Info
-	</figcaption>
-</figure>
-
-<p>
-  This section is only useful and active if the session has a
-  <a href="@@monitor-section">Monitor section</a>. The three buttons are
-  exactly linked to their counterparts in the Monitor slice of the mixer,
-  but as they sit in the toolbar, remain visible even in Editor mode.
-</p>
-
-<p>
-	The three buttons are:
-</p>
-<ul>
-  <li><dfn>Mono</dfn>: sums all of the paths to a single mono signal and applies it to all Monitor Section outputs.</li>
-  <li><dfn>Dim All</dfn>: Reduces overall monitor level by the amount set with the Dim level control.</li>
-  <li><dfn>Mute All</dfn>: Mutes all monitoring.</li>
-</ul>
-
-
-<h2 id="tb_master_level_meter">The Master Level Meter</h2>
-
-<figure>
-	<img alt="The Master Level Meter" src="/images/master-level-meter.png">
-	<figcaption>
-		The Master Level Meter
-	</figcaption>
-</figure>
-<p>
-  The global meter shows the levels of the master's output. Its the same
-  meter that sits in the <a href="@@master-bus-strip">Master's Mixer strip</a>,
-  and also shows a peak indicator, that turns red when  any level exceeds
-  0dB. It can be reset by a <kbd class="mouse">Left</kbd> click.
-</p>
-
 <h2 id="tb_script_buttons">Script/Shortcut buttons</h2>
 
 <figure>
 	<img alt="The Script buttons" src="/images/script-buttons.png">
 	<figcaption>
-		The Script/shortcuts buttons
+		The script / shortcuts buttons
 	</figcaption>
 </figure>
 
@@ -145,7 +144,7 @@
 </figure>
 
 <p>
-  The Mode Selector allows switching between the Editor, Mixer or Recording
+  The Mode Selector allows switching between the Editor, Mixer, Cue, and Recording
   windows. If a window is detached, the corresponding button is lit.
   Clicking the button switches the detached window visibility.
 </p>
