@@ -1,7 +1,18 @@
 <h2 id="reusing-mixer-strips">Reusing Mixer Strips</h2>
 
 <p>
-	It's possible to reuse mixer strips (all plugin parameters, pin connections, fader position, etc.) in other sessions.
+	It's possible to reuse mixer strips in other sessions. This involves importing:
+</p>
+
+<ul>
+	<li>trim gain;</li>
+	<li>all plugin parameters;</li>
+	<li>pin connections;</li></li>
+	<li>fader position and value.</li>
+</ul>
+
+<p>
+  Other settings of the affected internal tracks/busses are retained.
 </p>
 
 <p>
@@ -63,7 +74,7 @@
 </figure>
 
 <p>
-	The <dfn>Local track/bus</dfn> columns is a list of tracks and busses in the currently opened session. Ardour defaults to displaying the master bus and the first three tracks. Other tracks can be selected from the drop-down list below. Selecting "-- New Track --" will create a new track with a mixer strip selected on the right.
+	The <dfn>Local track/bus</dfn> columns is a list of tracks and busses in the currently opened session. Ardour defaults to displaying pairs of internal tracks/busses and externals states with matching names. Other tracks can be selected from the drop-down list below. Selecting "-- New Track --" will create a new track with a mixer strip selected on the right.
 </p>
 
 <p>
@@ -81,7 +92,7 @@
 <ul>
 	<li><dfn>Clear Mapping</dfn> removes all mappings between internal tracks/busses and external states.</li>
 	<li><dfn>Import all as new tracks</dfn> removes all mappings and creates new ones where all external states are imported as new tracks.</li>
-	<li><dfn>Reset</dfn> restores default mappings (master bus + the first three tracks).</li>
+	<li><dfn>Reset</dfn> restores default mappings (tracks and busses with matching names).</li>
 </ul>
 
 <p>
