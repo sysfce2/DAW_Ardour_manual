@@ -1,0 +1,99 @@
+<h2 id="reusing-mixer-strips">Reusing Mixer Strips</h2>
+
+<p>
+	It's possible to reuse mixer strips (all plugin parameters, pin connections, fader position, etc.) in other sessions.
+</p>
+
+<p>
+	The three available options for loading processing from mixer strips are:
+</p>
+
+<ul>
+	<li>Local strip templates: these templates are saved into the current session's folder.</li>
+	<li>Global strip templates: these templates are saved into the user's local folder with Ardour settings.</li>
+	<li>Ardour sessions: processing is extracted from arbitrary Ardour sessions on the disk and applied to existing tracks/busses or imported as new tracks/busses.</li>
+</ul>
+
+<h2 id="saving-mixer-strips">Saving Mixer Strips</h2>
+
+<p>
+	To save mixer strips for further reuse, select track and busses whose processing you want to save, then choose <kbd class="menu">Session &gt; Save Mixer Strips…</kbd>. In the newly opened dialog:
+</p>
+
+<ol>
+	<li>Select whether you want to export mixer strips from the entire session or just the selected tracks/busses.</li>
+	<li>Select whether you want to export a local or a global strip template.</li>
+	<li>Provide the name for the template.</li>
+	<li>Click <kbd class="key">OK</kbd>.</li>
+</ol>
+
+<figure>
+	<img alt="Saving Mixer Strips" width="400px" src="/images/export-mixer-strips.png">
+	<figcaption>
+		Saving Mixer Strips
+	</figcaption>
+</figure>
+
+<h2 id="importing-mixer-strips">Importing Mixer Strips</h2>
+
+<p>
+	To load mixer strips, select <kbd class="menu">Session &gt; Import Mixer Strips…</kbd>, then pick an arbitrary session from disk, one of the recently opened sessions, or eother global or local strip template.
+</p>
+
+<figure>
+	<img alt="Importing Mixer Strips" width="400px" src="/images/import-mixer-strips.png">
+	<figcaption>
+		Importing Mixer Strips
+	</figcaption>
+</figure>
+
+<p>
+	Once you select the source of mixer strips, Ardour will display the number of tracks in either the session or the strip template. Click <kbd class="key">Forward</kbd> to continue.
+</p>
+
+<p>
+	At the next step, Ardour allows you to map internal strips (already available in the session) and external strips (from the selected Ardour session or strip template).
+</p>
+
+<figure>
+	<img alt="Mapping Mixer Strips" width="400px" src="/images/map-mixer-strips.png">
+	<figcaption>
+		Mapping Mixer Strips
+	</figcaption>
+</figure>
+
+<p>
+	The <dfn>Local track/bus</dfn> columns is a list of tracks and busses in the currently opened session. Ardour defaults to displaying the master bus and the first three tracks. Other tracks can be selected from the drop-down list below. Selecting "-- New Track --" will create a new track with a mixer strip selected on the right.
+</p>
+
+<p>
+	The <dfn>External State</dfn> column is a list of mixer strips available in either selected Ardour session or local/global template.
+</p>
+
+<p>
+	For a new pair of internal track/bus and external state, click the <kbd class="key">+</kbd> button to add the mapping to the list.
+</p>
+
+<p>
+	The <dfn>Actions</dfn> drop-down list contains three shortcuts:
+</p>
+
+<ul>
+	<li><dfn>Clear Mapping</dfn> removes all mappings between internal tracks/busses and external states.</li>
+	<li><dfn>Import all as new tracks</dfn> removes all mappings and creates new ones where all external states are imported as new tracks.</li>
+	<li><dfn>Reset</dfn> restores default mappings (master bus + the first three tracks).</li>
+</ul>
+
+<p>
+	The <dfn>Show all local tracks</dfn> toggle enabled displaying all available tracks and busses in the currently opened session rather than the the first three ones by default.
+</p>
+
+<p>
+	Click <kbd class="key">OK</kbd> to complete importing mixer strips to the current session.
+</p>
+
+<h2 id="managing-strip-templates">Managing Mixer Strip Templates</h2>
+
+<p>
+	Global mixer strip templates are available for managing in the <a href="@@template-manager">Template Manager</a>.
+</p>

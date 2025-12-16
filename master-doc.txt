@@ -1978,6 +1978,14 @@ part: subchapter
 ---
 
 ---
+title: Saving and Importing Mixer Strips
+include: saving-importing-mixer-strips.html
+link: saving-importing-mixer-strips
+uri: mixing/saving-importing-mixer-strips
+part: subchapter
+---
+
+---
 title: Loudness Analyzer and Normalizer
 include: loudness-analyzer.html
 link: loudness-analyzer
