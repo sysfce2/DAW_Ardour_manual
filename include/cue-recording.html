@@ -10,17 +10,31 @@
 </figure>
 
 <ol>
-	<li>On the Cue page, Click on the record button at the top of the track you want to record to.</li>
+	<li>On the Cue page, Click on the record button at the top of
+	the track you want to record to. The play buttons for every
+	slot turns into a record enable button.</li>
 	<li>Select a trigger slot</li>
-	<li>Enable Follow Length in Follow Options at the bottom</li>
-	<li>Set the follow length in beats</li>
-	<li>Click to the left of the selected trigger slot to enable recording</li>
-	<li>Click the Play button in the transport toolbar or press <kbd>Space</kbd></li>
+	<li>Click the recording buttong to the left of the selected trigger slot to enable recording</li>
+	<li>Start the transport (typically by clicking the Play button in the transport toolbar or pressing <kbd>Space</kbd>)</li>
 </ol>
+<p>
+  By default, the recording will be 1 bar long; you can change this in
+  the clip properties area, using the length dropdown selector above
+  the pianoroll:
+</p>
+<p>
+<img src="/images/cue-rec-length-selector.png" alt="Cue recording length selector">
+</p>
+<p>
+  If you select "Until Stopped", then recording will continue until
+  you explicitly stop the recording, most typically by pressing the
+  space bar on your computer. 
+</p>
+
 
 <p>
 	Ardour will count down (the number of beats depends on launch quantization and position of the playhead) and start recording. 
 </p>
 <p>
-	As soon as the playhead reaches the end of the defined follow length, Ardour will stop recording and start playing back the clip you've just recorded.
+	As soon as the playhead reaches the end of the defined recording length, Ardour will stop recording and start playing back the clip you've just recorded.
 </p>
